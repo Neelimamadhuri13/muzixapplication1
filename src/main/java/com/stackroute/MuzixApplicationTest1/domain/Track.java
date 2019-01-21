@@ -6,15 +6,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.lang.annotation.Documented;
 
-@Entity
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 
+@Entity
 public class Track {
     @Id
     @ApiModelProperty(notes = "The database generated track Id")
