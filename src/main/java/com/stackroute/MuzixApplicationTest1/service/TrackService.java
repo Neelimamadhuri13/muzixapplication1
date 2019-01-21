@@ -12,4 +12,5 @@ public interface TrackService  {
     public List<Track> getAllTracks();
     public Track updatetrack(Track track) throws TrackAlreadyUpdated;
     public boolean deletetrack(int id) throws TrackNotFound;
+    public Track findByname(String name) ;
 }

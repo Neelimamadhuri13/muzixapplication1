@@ -6,6 +6,8 @@ import com.stackroute.MuzixApplicationTest1.exceptions.TrackNotFound;
 import com.stackroute.MuzixApplicationTest1.trackrepository.TrackRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.sql.SQLOutput;
 import java.util.List;
 @Service
 public class TrackServiceImpl implements TrackService {
@@ -59,5 +61,11 @@ public class TrackServiceImpl implements TrackService {
         } else {
             throw new TrackNotFound("Track id not found");
         }
+    }
+
+    @Override
+    public Track findByname(String name) {
+        System.out.println("find by NAME CALL+++++++"+trackRepository.findByname(name));
+        return trackRepository.findByname(name);
     }
 }

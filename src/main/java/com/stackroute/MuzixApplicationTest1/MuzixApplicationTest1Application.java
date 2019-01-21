@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MuzixApplicationTest1Application {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(MuzixApplicationTest1Application.class, args);
 	}
 
